@@ -1,0 +1,83 @@
+header
+    padding: 0
+    margin: 0
+.navbar
+    max-height: 110px   
+    padding: 20px 0px
+    &-wrap
+        display: flex
+        justify-content: space-between
+        text-align: center
+    &__logo
+        display: flex
+        &_text
+            +light(16px)
+            text-transform: uppercase
+            margin-left: 15px
+            text-align: left
+    &__menu
+        display: flex
+        list-style: none
+        margin-top: 20px
+        &-item
+            text-transform: uppercase
+            +regular(17px)
+            margin-right: 65px
+            &:hover
+                cursor: pointer
+                color: lighten(#222, 40%)
+    &__contacts
+        margin-top: 10px
+        &_img
+            width: 20px
+            height: 20px
+            margin-top: 10px
+        &_phone
+            margin-top: 10px
+            margin-left: 10px
+            +medium(20px)
+            text-decoration: none
+            color: #222222
+.hero
+    background: url('../../elements/hero-bg.png') no-repeat center
+    color: #fff    
+    background-size: cover
+    &-wrap
+        padding: 110px 0px 140px 0px
+    &_title
+        & > span 
+            color: red
+        padding: 0
+        margin: 0
+        margin-bottom: 25px
+        +medium(48px)
+        text-transform: uppercase
+    &_subtitle
+        +medium(24px)
+        text-transform: uppercase
+        margin-bottom: 35px
+        & > span 
+            border-bottom: 1px solid grey
+    &_description
+        +regular(14px)
+        text-transform: uppercase
+        margin-bottom: 60px
+    &_offer
+        +regular(14px)
+        text-transform: uppercase
+        margin-bottom: 35px
+    &-form
+        &_phone
+            width: 140px
+            padding: 15px 0px 15px 45px
+            margin-right: 15px
+            background: #222222 url('../../elements/telephone-handle-silhouette копия 10.png') no-repeat 20px
+            color: #fff
+            border: 1px solid grey
+            +regular(14px)
+            font-style: italic
+        &_btn
+            width: 200px
+            +medium(15px)
+
+

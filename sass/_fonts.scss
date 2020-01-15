@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald.otf');
+    src: url('../fonts/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald.otf');
+    src: url('../fonts/oswald.bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald.otf');
+    src: url('../fonts/Oswald-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald.otf');
+    src: url('../fonts/Oswald-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@mixin regular($font-size) {
+    font-family: 'Oswald';
+    font-size: $font-size;
+    font-weight: normal;
+}
+@mixin light($font-size) {
+    font-family: 'Oswald';
+    font-size: $font-size;
+    font-weight: 200;
+}
+
+@mixin medium($font-size) {
+    font-family: 'Oswald';
+    font-size: $font-size;
+    font-weight: 600;
+}
+
+@mixin bold($font-size) {
+    font-family: 'Oswald';
+    font-size: $font-size;
+    font-weight: bold;
+}

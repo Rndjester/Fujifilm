@@ -1,0 +1,52 @@
+.inside
+    text-align: center
+    background-color: #f6f6f6
+    padding: 45px
+    &_title
+        +medium(36px)
+        margin: 0
+        margin-bottom: 50px
+    &-slider
+        position: relative
+        &::before
+            display: block
+            position: absolute
+            content: ""
+            width: 55px
+            height: 50px
+            right: 7%
+            top: 35%
+            background: url('../../elements/back.png') no-repeat center
+            cursor: pointer
+        &::after
+            display: block
+            position: absolute
+            content: ""
+            width: 55px
+            height: 50px
+            left: 7%
+            top: 35%
+            transform: rotate(180deg)
+            background: url('../../elements/back.png') no-repeat center
+            cursor: pointer
+        &__item
+            display: block
+            margin: auto
+            margin-bottom: 20px
+        &-wrap 
+            display: flex
+            justify-content: center
+        &__img
+            margin-left: 15px 
+            height: 100px
+            &:first-child
+                margin-left: 0px 
+            &:hover
+                cursor: pointer
+                outline: 5px solid red
+                outline-offset: -5px
+.hide 
+    display: none
+.active 
+    outline: 5px solid green
+    outline-offset: -5px
