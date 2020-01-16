@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../../sass/blocks/inside.sass"
-    ],
-    "names": [],
-    "file": "inside.min.css"
-}
