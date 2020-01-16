@@ -34,6 +34,19 @@
             <!-- Окончание контейнера -->
         </section>
         <!-- Окончание блока navbar -->
+        <button class="header-burger__menu">
+            <span class="header-burger__menu_line"></span>
+            <span class="header-burger__menu_line"></span>
+            <span class="header-burger__menu_line"></span>    
+        </button>
+        <div class="header-burger__menu_active"></div>
+            <ul class="header-burger__menu_active">
+                <li class="header-burger__menu-item"> <a href = '#' class="header-burger__menu-item_link">О нас</a></li>
+                <li class="header-burger__menu-item"> <a href = '#' class="header-burger__menu-item_link">Услуги</a></li>
+                <li class="header-burger__menu-item"> <a href = '#' class="header-burger__menu-item_link">Гарантии</a></li>
+                <li class="header-burger__menu-item"> <a href = '#' class="header-burger__menu-item_link">Контакты</a></li>
+            </ul>
+        </div>  
         <section class="hero">
             <div class="container">
                 <div class="hero-wrap">
@@ -42,7 +55,7 @@
                     <p class="hero_description">Благодаря собственному складу оригинальных запчастей</p>
                     <p class="hero_offer">Отправьте заявку через сайт и получите 20% скидку!</p>
                     <form action="" class="hero-form">
-                        <input type="phone" class = 'hero-form_phone' placeholder = 'Ваш телефон'>
+                        <input type="phone" class = 'hero-form_phone' type="tel" name="phone" placeholder="Ваш телефон"  pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
                         <input type="submit" class = 'hero-form_btn button' value="Отправить заявку">
                     </form>
                 </div>
@@ -58,15 +71,15 @@
             <div class="container">
                 <h2 class="features_title">Какое устройство нуждается в ремонте?</h2>
                 <div class="repear-wrap">
-                    <div class="repear__item">
-                        <img src="elements/repear_camera.png" alt="Камера" class="repear__item_img">
-                        <h3 class="repear__item_title">Фотоаппарат</h3>
-                        <button class="repear__item_btn button">Подробнее</button>
+                    <div class="repear-item">
+                        <img src="elements/repear_camera.png" alt="Камера" class="repear-item_img">
+                        <h3 class="repear-item_title">Фотоаппарат</h3>
+                        <button class="repear-item_btn button">Подробнее</button>
                     </div>
-                    <div class="repear__item">
-                        <img src="elements/repear_lens.png" alt="Объектив" class="repear__item_img">
-                        <h3 class="repear__item_title">Объектив</h3>
-                        <button class="repear__item_btn button">Подробнее</button>
+                    <div class="repear-item">
+                        <img src="elements/repear_lens.png" alt="Объектив" class="repear-item_img">
+                        <h3 class="repear-item_title">Объектив</h3>
+                        <button class="repear-item_btn button">Подробнее</button>
                     </div>
                 </div>
                 <!-- Окончание Обертки repear -->
@@ -108,16 +121,18 @@
             <div class="container">
                 <h2 class="inside_title">Посмотрите как выполняется ремонт в нашем сервисе</h2>
                 <div class="inside-slider"> 
-                    <iframe class = 'inside-slider__item hide' width="750" height="420" src="https://www.youtube.com/embed/P62sFLV_9fU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe class = 'inside-slider__item ' width="750" height="420" src="https://www.youtube.com/embed/P62sFLV_9fU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe class = 'inside-slider__item hide' width="750" height="420" src="https://www.youtube.com/embed/P62sFLV_9fU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe class = 'inside-slider__item hide' width="750" height="420" src="https://www.youtube.com/embed/P62sFLV_9fU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class = 'inside-slider__item hide' id = 'insideSlide-1' width="750" height="420" src="https://www.youtube.com/embed/P62sFLV_9fU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class = 'inside-slider__item ' id = 'insideSlide-2' width="750" height="420" src="https://www.youtube.com/embed/P62sFLV_9fU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class = 'inside-slider__item hide' id = 'insideSlide-3' width="750" height="420" src="https://www.youtube.com/embed/P62sFLV_9fU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class = 'inside-slider__item hide' id = 'insideSlide-4' width="750" height="420" src="https://www.youtube.com/embed/P62sFLV_9fU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class = 'inside-slider-wrap'>
-                        <div class = 'inside-slider__img'><img src="elements/inside-image-1.png" alt="" ></div>
-                        <div class = 'inside-slider__img'><img src="elements/inside-image-1.png" alt="" ></div>
-                        <div class = 'inside-slider__img active'><img src="elements/inside-image-1.png" alt="" ></div>
-                        <div class = 'inside-slider__img'><img src="elements/inside-image-1.png" alt="" ></div>
+                        <div class = 'inside-slider__img' id = 'insideImg-1'><img src="elements/inside-image-1.png" alt="" ></div>
+                        <div class = 'inside-slider__img active' id = 'insideImg-2'><img src="elements/inside-image-1.png" alt="" ></div>
+                        <div class = 'inside-slider__img ' id = 'insideImg-3'><img src="elements/inside-image-1.png" alt="" ></div>
+                        <div class = 'inside-slider__img' id = 'insideImg-4'><img src="elements/inside-image-1.png" alt="" ></div>
                     </div>
+                    <span href="#" class="inside-slider_arrow" id = 'insideRight'></span>
+                    <span href="#" class="inside-slider_arrow" id = 'insideLeft'></span>
                 </div>
             </div>
         </section>

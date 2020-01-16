@@ -76,8 +76,149 @@ header
             border: 1px solid grey
             +regular(14px)
             font-style: italic
+            outline: none
+            &:valid 
+                border-color: green
+            &:invalid 
+                border-color: red
         &_btn
             width: 200px
             +medium(15px)
+.header-burger__menu_active 
+    display: none
+.header-burger__menu
+    display: none
+@media ( max-width: 1000px ) 
+    .navbar
+        &__logo
+            width: 60px
+            height: 60px
+            &_text
+                font-size: 14px
+                margin-left: 10px
+        &__menu
+            &-item
+                margin-right: 20px
+                font-size: 14px
+        &__contacts
+            margin-top: 10px
+            &_img
+                width: 15px
+                height: 15px
+                margin-top: 10px
+            &_phone
+                font-size: 16px
 
-
+@media  ( max-width: 760px )
+    .header 
+        &-burger__menu 
+            cursor: pointer
+            position: absolute
+            display: block
+            top: 30px
+            right: 30px
+            display: flex
+            flex-direction: column
+            background-color: transparent
+            border:none
+            color: #fff
+            border: none
+            &:focus 
+                outline: none
+            &_line 
+                margin-top: 6px
+                width: 22px
+                height: 2px
+                background-color: #222
+                transition: .5s
+            &_active 
+                display: block
+                position: absolute
+                margin: 0
+                padding: 0
+                list-style: none
+                width: 100%
+                background-color: rgba(0, 0, 0, 1)
+                transform: translateY(-160%)
+                overflow: hidden
+                transition: .5s
+            &-item 
+                padding: 15px
+                border-bottom: 1px solid #fff
+                font-size: 10px
+                &_link 
+                    text-decoration: none
+                    color: #fff
+                    +regular(24px)
+    .active_burger 
+        transform: translateY(0%)
+        transition: .5s
+    .active_menu span 
+        &:nth-child(1) 
+            transform: rotate(45deg)
+            transition: .2s
+            transform-origin: left
+            margin-bottom: 8px
+    .active_menu span 
+        &:nth-child(2) 
+            display: none
+            transition: .2s
+    .active_menu span 
+        &:nth-child(3) 
+            transform: rotate(-45deg)
+            transition: .2s
+            transform-origin: left   
+    .navbar
+        &__menu
+            display: none
+        &__contacts
+            margin-right: 50px
+    .hero
+        &-wrap
+            padding: 40px 0px 50px 0px
+        &_title
+            margin-bottom: 10px
+            font-size: 28px
+            text-transform: uppercase
+        &_subtitle
+            font-size: 20px
+            margin-bottom: 10px
+        &_description
+            font-size: 12px
+            margin-bottom: 20px
+        &_offer
+            font-size: 12px
+            margin-bottom: 15px
+        &-form
+            &_phone
+                width: 100px
+                padding: 7px 0px 7px 45px
+                margin-right: 10px
+            &_btn
+                width: 120px
+                font-size: 14px
+                padding: 7px
+@media  ( max-width: 500px )
+    .header 
+        &-burger__menu 
+            top: 20px
+            right: 20px
+    .navbar
+        height: 40px
+        &__logo
+            & > img
+                width: 40px
+                height: 40px
+            &_text
+                font-size: 10px
+                margin-left: 5px
+        &__contacts
+            margin-top: 0px
+            &_img
+                width: 12px
+                height: 12px
+                margin-top: 10px
+            &_phone
+                margin-top: 0
+                margin-left: 5px
+                font-size: 14px

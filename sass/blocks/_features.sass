@@ -3,7 +3,7 @@
         display: flex
         text-align: center
         margin-bottom: 41px
-    &__item
+    &-item
         flex-basis: 47.5%
         background-color: #f6f6f6
         padding: 80px 0px 80px 80px
@@ -64,3 +64,95 @@
     &_text
         +regular(16px)
         width: 55%
+@media ( max-width: 1000px )
+    .repear
+        &-wrap
+            flex-wrap: wrap
+            margin-bottom: 0
+        &-item
+            flex-basis: 90%
+            margin-bottom: 30px
+            &:first-child
+                margin-right: 0
+    .features
+        &-wrap
+            flex-wrap: wrap
+            margin-bottom: 0
+        &-item
+            flex-basis: 45%
+            margin-bottom: 30px
+            margin-right: 0
+            padding: 30px 15px 15px 10px
+            &:nth-child(odd)
+                margin-right: 3%
+    .warranty-card
+        padding: 30px
+        margin-bottom: 30px
+        margin-top: 30px
+        &_title
+            font-size: 28px
+            margin-bottom: 10px
+        &_subtitle
+            font-size: 16px
+            margin-bottom: 10px
+        &_text
+            font-size: 14px
+@media ( max-width: 800px )               
+    .features
+        &_title
+            font-size: 26px
+        &-item
+            flex-basis: 43%
+            margin-right: 0
+            padding: 30px 15px 15px 10px
+            &:nth-child(odd)
+                margin-right: 3%
+    .warranty-card
+        padding: 15px
+        margin-bottom: 20px
+        margin-top: 0
+        &_title
+            font-size: 18px
+            margin-bottom: 5px
+        &_subtitle
+            font-size: 14px
+            margin-bottom: 5px
+        &_text
+            font-size: 12px
+            width: 58%
+@media ( max-width: 500px )  
+    .repear
+        &-item
+            text-align: center
+            padding: 20px
+            margin-bottom: 20px
+            &_img
+                float: none
+                margin: auto
+                margin-bottom: 10px
+            &_title
+                font-size: 18px
+            &_btn
+                +medium(15px)
+                width: 140px
+                background-position: 115px
+
+    .features
+        &_title
+            font-size: 22px
+        &-item
+            flex-basis: 100%
+            &:nth-child(odd)
+                margin-right: 0
+    .warranty-card
+        width: 85%
+        padding: 20px
+        background-size: cover
+        &_title
+            font-size: 26px
+            margin-bottom: 5px
+        &_subtitle
+            font-size: 18px
+            margin-bottom: 5px
+        &_text
+            display: none

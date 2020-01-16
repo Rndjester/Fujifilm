@@ -8,34 +8,16 @@
         margin-bottom: 50px
     &-slider
         position: relative
-        &::before
-            display: block
-            position: absolute
-            content: ""
-            width: 55px
-            height: 50px
-            right: 7%
-            top: 35%
-            background: url('../../elements/back.png') no-repeat center
-            cursor: pointer
-        &::after
-            display: block
-            position: absolute
-            content: ""
-            width: 55px
-            height: 50px
-            left: 7%
-            top: 35%
-            transform: rotate(180deg)
-            background: url('../../elements/back.png') no-repeat center
-            cursor: pointer
+        margin: 0
+        padding: 0
+        height: 550px
         &__item
             display: block
             margin: auto
-            margin-bottom: 20px
         &-wrap 
             display: flex
             justify-content: center
+            margin-top: 20px
         &__img
             margin-left: 15px 
             height: 100px
@@ -47,6 +29,69 @@
                 outline-offset: -5px
 .hide 
     display: none
+    margin: 0
 .active 
-    outline: 5px solid green
+    outline: 5px solid #222
     outline-offset: -5px
+#insideRight
+    &::before
+        display: block
+        position: absolute
+        content: ""
+        width: 55px
+        height: 50px
+        right: 7%
+        top: 35%
+        background: url('../../elements/back.png') no-repeat center
+        cursor: pointer
+#insideLeft
+    &::after
+        display: block
+        position: absolute
+        content: ""
+        width: 55px
+        height: 50px
+        left: 7%
+        top: 35%
+        transform: rotate(180deg)
+        background: url('../../elements/back.png') no-repeat center
+        cursor: pointer
+@media ( max-width: 1000px )
+    iframe
+        width: 480px
+        height: 300px
+        margin: 0
+        padding: 0
+    .inside
+        &-slider
+            height: 320px
+            &-wrap
+                display: none
+@media ( max-width: 760px )
+    .inside
+        padding: 10px 0 40px 0
+        &_title
+            font-size: 22px
+            margin-bottom: 20px
+        &-slider
+            height: 200px
+    iframe
+        width: 95%
+        height: 200px 
+        margin: 0
+        padding: 0   
+    #insideRight
+        &::before
+            background-size: contain
+            width: 30px
+            height: 30px
+            right: 35%
+            top: 108%
+    #insideLeft
+        &::after
+            background-size: contain
+            width: 30px
+            height: 30px
+            left: 35%
+            top: 108%
+    
