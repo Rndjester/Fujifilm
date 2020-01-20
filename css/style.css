@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @font-face {
   font-family: 'Oswald';
   src: url("../fonts/Oswald.otf");
@@ -49,7 +49,7 @@ body {
 .button {
   padding: 14px 0;
   color: #222222;
-  background: #fff url("../../elements/button-arrows.png") no-repeat 170px;
+  background: #fff url("../elements/button-arrows.png") no-repeat 170px;
   border: none;
   cursor: pointer;
 }
@@ -141,7 +141,7 @@ header {
 }
 
 .hero {
-  background: url("../../elements/hero-bg.png") no-repeat center;
+  background: url("../elements/hero-bg.png") no-repeat center;
   color: #fff;
   background-size: cover;
 }
@@ -196,7 +196,7 @@ header {
   width: 140px;
   padding: 15px 0px 15px 45px;
   margin-right: 15px;
-  background: #222222 url("../../elements/telephone-handle-silhouette копия 10.png") no-repeat 20px;
+  background: #222222 url("../elements/telephone-handle-silhouette копия 10.png") no-repeat 20px;
   color: #fff;
   border: 1px solid grey;
   font-family: 'Oswald';
@@ -504,7 +504,7 @@ header {
 .warranty-card {
   margin-top: 40px;
   margin-bottom: 65px;
-  background: url("../../elements/warranty-card.png") no-repeat;
+  background: url("../elements/warranty-card.png") no-repeat;
   background-size: contain;
   color: #fff;
   padding: 75px 55px 65px 55px;
@@ -734,7 +734,7 @@ header {
   height: 50px;
   right: 7%;
   top: 35%;
-  background: url("../../elements/back.png") no-repeat center;
+  background: url("../elements/back.png") no-repeat center;
   cursor: pointer;
 }
 
@@ -748,7 +748,7 @@ header {
   top: 35%;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  background: url("../../elements/back.png") no-repeat center;
+  background: url("../elements/back.png") no-repeat center;
   cursor: pointer;
 }
 
